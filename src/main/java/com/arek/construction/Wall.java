@@ -15,8 +15,7 @@ public class Wall implements Structure {
             return Optional.empty();
         }
         return blocks.stream()
-                .filter(c -> c.getColor().equals(color))
-                .findAny();
+                .filter(c -> c.getColor().equals(color)).findAny();
     }
 
     @Override
